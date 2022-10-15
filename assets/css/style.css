@@ -1,3 +1,14 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-pink: #f13c6e;
+
+  --color-gray-font: #eeeeee;
+  --color-gray-light: #fefefe;
+  --color-gray-medium: #e5e5e5;
+  --color-gray-dark: #333333;
+}
+
 *,
 *::before,
 *::after {
@@ -8,8 +19,8 @@ html {
   font-size: 16px;
 }
 body {
-  background-color: #eeeeee;
-  color: #333333;
+  background-color: var(--color-gray-font);
+  color: var(--color-gray-dark);
   font-size: 0, 875rem;
 }
 a {
@@ -24,11 +35,17 @@ a {
   max-width: 170px;
   min-height: 40px;
   padding: 0.25em 1em;
-  border: 2px solid #f13c6e;
   border-radius: 40px;
-  background-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
 }
 .btn--primary {
+  border-color: var(--color-pink);
+  background-color: var(--color-white);
+}
+.btn--secondary {
+  border-color: var(--color-white);
+  background-color: var(--color-pink);
 }
 
 .container {
@@ -44,6 +61,7 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 0 10px;
 }
@@ -53,7 +71,7 @@ a {
   padding: 10px;
 }
 .navbar-info {
-  background-color: #fefefe;
+  background-color: var(--color-gray-light);
   padding: 20px 0;
   margin-bottom: 1px;
 }
@@ -70,11 +88,11 @@ a {
 }
 .feedback__phone {
   font-size: 1rem;
-  color: black;
+  color: var(--color-black);
 }
 
 .navbar-primary {
-  background-color: #fefefe;
+  background-color: var(--color-gray-light);
   padding: 18px 0;
 }
 .navbar-primary__list {
@@ -90,7 +108,7 @@ a {
   display: block;
   padding: 10px;
   font-size: 1rem;
-  color: black;
+  color: var(--color-black);
 }
 
 @media (max-width: 768px) {
@@ -103,4 +121,39 @@ a {
   .feedback {
     flex-direction: column;
   }
+}
+
+.main {
+}
+.hero {
+  min-height: 604px;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: 192px 0;
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 89% 50%;
+}
+.hero__content {
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.hero__title {
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0;
+}
+.hero__description {
+  line-height: 1.43;
+}
+.hero__actions {
+}
+.hero__button {
+}
+.btn {
+}
+.btn--secondary {
 }
