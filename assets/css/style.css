@@ -4,6 +4,7 @@
   --color-black: #000000;
   --color-white: #ffffff;
 
+  --plh-color-gray: #c4c4c4;
   --bg-color-gray: #efefef;
   --border: 1px solid var(--bg-color-gray);
 }
@@ -143,6 +144,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  margin-bottom: 100px;
 }
 .special__title {
   font-weight: 700;
@@ -153,7 +155,6 @@ a {
 .special-item {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   max-width: 255px;
   min-height: 363px;
@@ -179,9 +180,92 @@ a {
   max-width: 130px;
   min-height: 35px;
   padding: 0.7em 3em;
-  border-radius: 40px;
+  border-radius: 20px;
   border: 2px solid var(--color-primary);
   background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.subscribe__container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.subscribe-gift {
+  min-height: 212px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  flex-basis: 50%;
+}
+.subscribe-gift__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 45px 35px 40px;
+}
+.subscribe-gift__title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  max-width: 250px;
+  margin: 0 0 25px;
+}
+.subscribe-gift__text {
+  line-height: 1.43;
+  max-width: 231px;
+  margin-bottom: 25px;
+}
+.subscribe-gift__field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color-white);
+  width: 225px;
+  min-height: 35px;
+  border-radius: 40px;
+  padding: 0.25em 1em;
+}
+.subscribe-gift__field::placeholder {
+  color: var(--plh-color-gray);
+}
+.subscribe-gift__field:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.subscribe-shops {
+  min-height: 212px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  flex-basis: 50%;
+}
+.subscribe-shops__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 45px 35px 40px;
+}
+.subscribe-shops__title {
+  font-weight: 700;
+  font-size: 1.125rem;
+  max-width: 250px;
+  margin: 0 0 25px;
+}
+.subscribe-shops__text {
+  line-height: 1.43;
+  max-width: 141px;
+  margin-bottom: 25px;
+}
+.subscribe-shops__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  min-height: 35px;
+  padding: 0.5em 1.5em;
+  border-radius: 40px;
+  border: 2px solid var(--color-white);
   color: var(--color-white);
 }
 
