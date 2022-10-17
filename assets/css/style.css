@@ -33,7 +33,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 170px;
+  width: 170px;
   min-height: 40px;
   padding: 0.25em 1em;
   border-radius: 40px;
@@ -312,7 +312,7 @@ a {
 .category {
   min-height: 372px;
   background-color: var(--color-white);
-  padding: 60px 0;
+  padding: 47px 0;
   margin-bottom: 1px;
 }
 .category__container {
@@ -328,7 +328,7 @@ a {
   font-size: 1rem;
   line-height: 1.38;
   color: var(--color-black);
-  margin-bottom: 30px;
+  margin-bottom: 23px;
 }
 .category__list {
   border-top: 1px solid var(--bg-color-gray);
