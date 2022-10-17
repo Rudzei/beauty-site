@@ -122,7 +122,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 89% 50%;
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 .hero__content {
   max-width: 375px;
@@ -159,11 +159,12 @@ a {
   max-width: 255px;
   min-height: 363px;
   background-color: var(--color-white);
-  padding: 25px 30px;
+  padding: 25px 0;
 }
 .special-item__text {
   line-height: 1.43;
   color: var(--color-secondary);
+  max-width: 195px;
   text-align: center;
 }
 .special-item__price {
@@ -172,6 +173,7 @@ a {
   letter-spacing: 0.05em;
   color: var(--color-black);
   text-align: center;
+  margin: 12px 0 12px;
 }
 .special__button {
   display: flex;
@@ -179,7 +181,7 @@ a {
   align-items: center;
   max-width: 130px;
   min-height: 35px;
-  padding: 0.7em 3em;
+  padding: 0.25em 3em;
   border-radius: 20px;
   border: 2px solid var(--color-primary);
   background-color: var(--color-primary);
@@ -189,7 +191,7 @@ a {
 .subscribe__container {
   display: flex;
   gap: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 103px;
 }
 .subscribe-gift {
   min-height: 212px;
@@ -207,7 +209,7 @@ a {
   font-weight: 700;
   font-size: 1.125rem;
   max-width: 250px;
-  margin: 0 0 25px;
+  margin: 0 0 20px;
 }
 .subscribe-gift__text {
   line-height: 1.43;
@@ -222,7 +224,7 @@ a {
   width: 225px;
   min-height: 35px;
   border-radius: 40px;
-  padding: 0.25em 1em;
+  padding: 0.5em 1.5em;
 }
 .subscribe-gift__field::placeholder {
   color: var(--plh-color-gray);
@@ -250,7 +252,7 @@ a {
   font-weight: 700;
   font-size: 1.125rem;
   max-width: 250px;
-  margin: 0 0 25px;
+  margin: 0 0 20px;
 }
 .subscribe-shops__text {
   line-height: 1.43;
@@ -267,6 +269,24 @@ a {
   border-radius: 40px;
   border: 2px solid var(--color-white);
   color: var(--color-white);
+}
+
+.brands {
+}
+
+.brands__container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.brands__item {
+  background-color: var(--color-white);
+  padding: 35px 63px 35px 63px;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
