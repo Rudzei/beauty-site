@@ -21,7 +21,7 @@ html {
 body {
   background-color: var(--bg-color-gray);
   color: var(--color-secondary);
-  font-size: 0, 875rem;
+  font-size: 0.875rem;
 }
 a {
   text-decoration: none;
@@ -51,6 +51,20 @@ a {
 .container {
   width: min(100% - 40px, 1110px);
   margin-inline: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .navbar-secondary {
@@ -139,20 +153,28 @@ a {
   line-height: 1.43;
 }
 
-.special__container {
+.special__container,
+.viewed__container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 100px;
 }
-.special__title {
+.special__container {
+  margin-bottom: 101px;
+}
+.viewed__container {
+  margin-bottom: 80px;
+}
+.special__title,
+.viewed__title {
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--color-black);
   margin-bottom: 38px;
 }
-.special-item {
+.special-item,
+.viewed-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -161,13 +183,15 @@ a {
   background-color: var(--color-white);
   padding: 25px 0;
 }
-.special-item__text {
+.special-item__text,
+.viewed-item__text {
   line-height: 1.43;
   color: var(--color-secondary);
   max-width: 195px;
   text-align: center;
 }
-.special-item__price {
+.special-item__price,
+.viewed-item__price {
   font-weight: 500;
   font-size: 1.3rem;
   letter-spacing: 0.05em;
@@ -175,7 +199,8 @@ a {
   text-align: center;
   margin: 12px 0 12px;
 }
-.special__button {
+.special__button,
+.viewed__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,15 +296,11 @@ a {
   color: var(--color-white);
 }
 
-.brands {
-}
-
 .brands__container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
-
 .brands__item {
   background-color: var(--color-white);
   padding: 35px 63px 35px 63px;
